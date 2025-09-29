@@ -9,7 +9,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.agents.agent_toolkits import create_retriever_tool
 import langchain
-from langchain_community.embeddings import OllamaEmbeddings
+# from langchain_community.embeddings import OllamaEmbeddings
 from hashlib import sha256
 import os
 from langchain.embeddings import HuggingFaceEmbeddings
@@ -24,7 +24,7 @@ print(f"LangChain version: {langchain.__version__}") # 0.3.27
 # api_key = os.environ.get("OLLAMA_API_KEY")
 
 
-embeddings = OllamaEmbeddings(model="mxbai-embed-large:latest")
+# embeddings = OllamaEmbeddings(model="mxbai-embed-large:latest")
 
 
 
