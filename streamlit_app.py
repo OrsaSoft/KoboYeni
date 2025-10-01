@@ -24,14 +24,14 @@ print(f"LangChain version: {langchain.__version__}") # 0.3.27
 # api_key = os.environ.get("OLLAMA_API_KEY")
 
 
-# embeddings = OllamaEmbeddings(model="mxbai-embed-large:latest")
+embeddings = OllamaEmbeddings(model="mxbai-embed-large:latest")
 
 
 
 
 api_key = os.environ.get("oJ6wgJeUMlciaLyoojF2OUancT1FoOAe")
 db_path = "vectordb"
-vector_db = Chroma(persist_directory=db_path,embedding_function=None)
+vector_db = Chroma(persist_directory=db_path,embedding_function=embeddings)
 
 
 if "messages" not in st.session_state:
